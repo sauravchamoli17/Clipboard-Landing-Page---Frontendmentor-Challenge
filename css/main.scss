@@ -37,34 +37,7 @@ body{
         text-align:center;
         padding:0px 10px 0px 10px;
     }
-    .download_button{
-        display:flex;
-        width:70%;
-        margin-top:25px;
-        justify-content: space-around;
-    }
-    .download_ios{
-        color:$white;
-        background-color:$strongcyan;
-        padding:10px 20px 10px 20px;
-        border-radius:20px;
-        text-decoration:none;
-        font-weight:600;
-        &:hover{
-            opacity:0.8;
-        }
-    }
-    .download_mac{
-        color:$white;
-        background-color:$lightblue;
-        padding:10px 25px 10px 25px;
-        border-radius:20px;
-        text-decoration:none;
-        font-weight:600;
-         &:hover{
-            opacity:0.8;
-        }
-    }
+    @include download_button;
 }
 // Keep Track Container
 .keep_track{
@@ -94,10 +67,155 @@ body{
         transform:translateX(-100px);
     }
     ul{
-        margin-top:60px;
         width:30%;
         list-style-type:none;
         padding:0;
+        li{
+        margin-top:60px;
+        }
+        h2{
+            color:$darkgrayishblue;
+            font-weight:600;
+            font-size:1.6rem;
+            margin-bottom:0;
+        }
+        p{
+            margin:10px 0px 10px 0px;
+            font-size:1.04rem;
+            color:$grayishblue;
+        }
     }
-   
+}
+
+// Access Container 
+.access_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:60%;
+    margin:0 auto;
+    margin-top:80px;
+    h2{
+        margin-bottom:0;
+        color:$darkgrayishblue;
+    }
+    p{
+        text-align:center;
+        color:$grayishblue;
+        font-size:1.04rem;
+        line-height:1.4rem;
+        width:80%;
+    }
+}
+
+// Supercharge Container 
+.supercharge_container{
+    width:75%;
+    margin:0 auto;
+   h2{
+       text-align:center;
+       color:$darkgrayishblue;
+       margin:15px 0px 0px 0px;
+   }
+   p{
+       text-align:center;
+       color:$grayishblue;
+       margin:15px 0px 0px 0px;
+       font-size:0.95rem;
+       line-height:1.4rem;
+   }
+}
+
+// Supercharge Features 
+.supercharge_features{
+    display:flex;
+    margin-top:60px;
+    justify-content: space-between;
+    .feature_item{
+        flex-basis:30%;
+        img{
+            display:block;
+            margin:0 auto;
+        }
+        h3{
+            text-align:center;
+            margin-bottom:0;
+            color:$darkgrayishblue;
+        }
+    }
+}
+
+// Company Logos
+.company_logo_container{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+    margin-top:120px;
+    justify-content:space-between;
+}
+
+// Download Container 
+.download_container{
+    @include download_button;
+    display:block;
+    margin:0 auto;
+    width:45%;
+    margin-top:100px;
+    h2{
+        text-align:center;
+        margin:10px 0px 10px 0px;
+        color:$darkgrayishblue;
+    }
+    p{
+        text-align:center;
+        font-size:1.04rem;
+        line-height:1.4rem;
+        color:$grayishblue;
+    }
+    .download_button{
+        margin:0 auto;
+        margin-top:50px;
+    }
+}
+
+// Footer Styling 
+footer{
+    display:flex;
+    flex-direction:column;
+    width:85%;
+    margin:0 auto;
+    margin-top:150px;
+    .footer_content{
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        figure{
+            width:45px;
+            height:45px;
+            img{
+                max-width:100%;
+            }
+        }
+        .footer_links{
+            display:flex;
+            flex-direction: column;
+            width:50%;
+            .links{
+                display: flex;
+            }
+            .other_links{
+                display: flex;
+                margin-bottom:20px;
+            }
+            a{
+            text-decoration:none;
+            color:$darkgrayishblue;
+            padding-left:20px;
+            font-weight: 600;
+            &:hover{
+                color:hsl(171, 66%, 44%);
+            }
+            }
+        }
+    }
 }

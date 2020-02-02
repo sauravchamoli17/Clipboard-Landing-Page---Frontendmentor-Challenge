@@ -1,0 +1,30 @@
+@mixin download_button{
+        .download_button{
+        display:flex;
+        width:70%;
+        margin-top:25px;
+        justify-content: space-around;
+    }
+    .download_ios{
+        color:$white;
+        background-color:$strongcyan;
+        padding:10px 20px 10px 20px;
+        border-radius:20px;
+        text-decoration:none;
+        font-weight:600;
+        &:hover{
+            opacity:0.8;
+        }
+    }
+    .download_mac{
+        color:$white;
+        background-color:$lightblue;
+        padding:10px 25px 10px 25px;
+        border-radius:20px;
+        text-decoration:none;
+        font-weight:600;
+         &:hover{
+            opacity:0.8;
+        }
+    }
+}
