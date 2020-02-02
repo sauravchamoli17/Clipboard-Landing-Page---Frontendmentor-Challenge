@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  background-color: white;
+  background: url("/images/bg-header-desktop.png") no-repeat;
+  background-position: top;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 12%;
+}
+
+.container h1 {
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+  color: #4c545d;
+}
+
+.container p {
+  font-size: 1.04rem;
+  line-height: 1.4rem;
+  color: #9fabb2;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.container .download_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin-top: 25px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .download_ios {
+  color: white;
+  background-color: #26baa4;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container .download_ios:hover {
+  opacity: 0.8;
+}
+
+.container .download_mac {
+  color: white;
+  background-color: #6173ff;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container .download_mac:hover {
+  opacity: 0.8;
+}
+
+.keep_track {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keep_track h2 {
+  color: #4c545d;
+  margin-bottom: 0;
+}
+
+.keep_track p {
+  text-align: center;
+  font-size: 1.04rem;
+  line-height: 1.4rem;
+  color: #9fabb2;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.features img {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.features ul {
+  margin-top: 60px;
+  width: 30%;
+  list-style-type: none;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

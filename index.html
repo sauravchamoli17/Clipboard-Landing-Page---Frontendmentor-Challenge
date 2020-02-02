@@ -19,10 +19,9 @@
   </style>
 </head>
 <body>
-    <header>
-      <img src="/images/logo.svg" alt="Logo Clipboard">
-    </header>
-        <div class="container">   
+      <main>
+         <div class="container">   
+         <img src="/images/logo.svg" alt="Logo Clipboard">
         <h1>
           A history of everything you copy
         </h1>
@@ -30,15 +29,16 @@
         Clipboard allows you to track and organize everything you 
         copy. Instantly access your clipboard on all your devices.
         </p>
-        <a href="#" class="download_ios" aria-label="Download for Ios">
-          Download for iOS
-        </a>
-        <a href="#" class="download_mac" aria-label="Download for Mac">
+        <div class="download_button">
+          <a href="#" class="download_ios" aria-label="Download for Ios">
+           Download for iOS
+          </a>
+         <a href="#" class="download_mac" aria-label="Download for Mac">
           Download for Mac
-        </a>
+         </a>
+        </div>
       </div>
-     
-      <!-- Keep Track Container -->
+        <!-- Keep Track Container -->
       <div class="keep_track">
         <h2>Keep track of your snippets</h2>
         <p>
@@ -52,20 +52,20 @@
       <!-- Features Container -->
       <div class="features">
         <img src="/images/image-computer.png" alt="Computer Image">
-        <ul class="features_list">
-          <li class="features_list_item">
+        <ul>
+          <li>
            Quick Search
            <p class="list_item_description">
             Easily search your snippets by content, category, web address, application, and more.
            </p>
           </li>
-          <li class="features_list_item">
+          <li>
             iCloud Sync
             <p class="list_item_description">
               Instantly saves and syncs snippets across all your devices.
             </p>
           </li>
-          <li class="features_list_item">
+          <li>
             Complete History
             <p class="list_item_description">
             Retrieve any snippets from the first moment you started using the app.
@@ -163,8 +163,9 @@
         </a>
      </div>
      <!-- Download Container Closed -->
+      </main>
+    <!-- Main Tag Closed -->
      </body>
-    <!-- Body Closed -->
       <footer>
         <div class="footer_content">
           <img src="/images/logo.svg" alt="Clipboard Logo">
