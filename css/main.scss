@@ -7,10 +7,10 @@
 }
 html{
     overflow-x:hidden;
-    margin:0;
-    padding:0;
 }
 body{
+    margin:0;
+    padding:0;
     overflow-x:hidden;
     font-size:$font-size;
     background-color:$white;
@@ -203,7 +203,7 @@ footer{
             display:flex;
             justify-content:space-between;
             align-items: center;
-            width:10%;
+            width:15%;
      } 
      .social_icon{
          text-decoration:none;
@@ -213,5 +213,231 @@ footer{
             color:$strongcyan;
          }
      }
+    }
+}
+// Media Queries Ahead
+@media (min-width:768px) and (max-width:1024px){
+    .container{
+        width:60%;
+        h1{
+        font-size:1.8rem;
+    }
+    p{
+        font-size:1rem;
+     }
+    }
+    .keep_track{
+        width:60%;
+        h2{
+            margin:12px 0px 12px 0px;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+    }
+    .features{
+        img{
+            width:70%;
+            height:30%;
+        }
+        ul{
+            width:70%;
+            margin-right:55px;
+            margin-top:0;
+        li{
+            margin-top:20px;
+            h2{
+                font-size:1.3rem;
+            }
+            p{
+                font-size:1rem;
+            }
+        }
+        }
+    }
+    .access_container{
+        width:80%;
+          h2{
+            margin:12px 0px 12px 0px;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+        img{
+            margin-top:20px;
+            max-width:100%;
+        }
+    }
+    .supercharge_container{
+        width:85%;
+        h2{
+            margin:12px 0px 12px 0px;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+    }
+    .supercharge_features{
+        h3{
+            margin:25px 0px 25px 0px;
+            font-size:1.4rem;
+        }
+        p{
+            margin:12px 0px 12px 0px;
+            font-size:0.9rem;
+        }
+    }
+    .company_logo_container{
+        width:95%;
+    }
+    .download_container{
+        width:60%;
+          h2{
+            margin:12px 0px 12px 0px;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+    }
+    footer{
+        width:95%;
+    .footer_links{
+        a{
+            font-size:1rem;
+        }
+     }
+    }
+}
+
+// For Low Resolution IPad's
+@media (min-width:481px) and (max-width:767px){
+    .container{
+        width:80%;
+        h1{
+            font-size:1.7rem;
+        }
+        p{
+            font-size:1rem;
+        }
+    }
+    .keep_track{
+        width:80%;
+          h2{
+            margin:12px 0px 12px 0px;
+            font-size:1.1rem;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+    }
+    .features{
+        img{
+            width:60%;
+            height:30%;
+        }
+         ul{
+            margin-right:70px;
+            margin-top:0;
+            width:50%;
+        li{
+            margin-top:25px;
+            h2{
+                font-size:1.1rem;
+            }
+            p{
+                font-size:1rem;
+            }
+        }
+     }
+    }
+   .access_container{
+       margin-top:60px;
+       width:80%;
+         h2{
+            margin:12px 0px 12px 0px;
+            font-size:1.1rem;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+        img{
+            max-width:100%;
+            margin-top:20px;
+        }
+   }
+   .supercharge_container{
+       margin-right:0;
+       width:90%;
+        h2{
+            margin:12px 0px 12px 0px;
+            font-size:1.1rem;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+   }
+   .supercharge_features{
+       margin-right:0;
+       width:95%;
+       h3{
+           font-size:0.98rem;
+       }
+       p{
+           font-size:0.95rem;
+       }
+   }
+   .company_logo_container{
+       width:95%;
+       margin-top:100px;
+       .company_logo{
+           flex-basis:17%;
+           img{
+               max-width:100%;
+           }
+       }
+   }
+   .download_container{
+       width:80%;
+           h2{
+            margin:12px 0px 12px 0px;
+            font-size:1.1rem;
+        }
+        p{
+            margin:6px 0px 6px 0px;
+            font-size:1rem;
+        }
+   }
+   footer{
+       width:100%;
+       .footer_content{
+           figure{
+               margin:0;
+           }
+            .socialmedia{
+           width:20%;
+       }
+       }
+       .footer_links{
+           a{
+               font-size:0.9rem;
+           }
+       }
+       .social_icon{
+           font-size:0.6rem;
+       }
+   }
+}
+// Media Query For Mobile 
+
+@media (min-width:320px) and(max-width:480px){
+    body{
+     background:url("/images/bg-header-desktop.png") no-repeat;
     }
 }
