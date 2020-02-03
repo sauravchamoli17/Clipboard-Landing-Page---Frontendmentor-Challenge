@@ -1,3 +1,4 @@
+// Download Button 
 @mixin download_button{
         .download_button{
         display:flex;
@@ -27,4 +28,19 @@
             opacity:0.8;
         }
     }
+}
+
+// Text Styles 
+@mixin paragraph{
+        p{
+        font-size:1.04rem;
+        line-height:1.4rem;
+        color:$grayishblue;
+        text-align:center;
+    }
+}
+
+@mixin h2{
+     color:$darkgrayishblue;
+     margin-bottom:0;
 }

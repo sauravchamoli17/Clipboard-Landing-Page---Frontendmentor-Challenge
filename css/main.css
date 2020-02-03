@@ -44,6 +44,9 @@ body {
   line-height: 1.4rem;
   color: #9fabb2;
   text-align: center;
+}
+
+.container p {
   padding: 0px 10px 0px 10px;
 }
 
@@ -97,18 +100,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.keep_track h2 {
   color: #4c545d;
   margin-bottom: 0;
 }
 
 .keep_track p {
-  text-align: center;
   font-size: 1.04rem;
   line-height: 1.4rem;
   color: #9fabb2;
+  text-align: center;
 }
 
 .features {
@@ -127,6 +127,8 @@ body {
   width: 30%;
   list-style-type: none;
   padding: 0;
+  color: #4c545d;
+  margin-bottom: 0;
 }
 
 .features ul li {
@@ -134,10 +136,8 @@ body {
 }
 
 .features ul h2 {
-  color: #4c545d;
   font-weight: 600;
   font-size: 1.6rem;
-  margin-bottom: 0;
 }
 
 .features ul p {
@@ -160,18 +160,18 @@ body {
   width: 60%;
   margin: 0 auto;
   margin-top: 80px;
-}
-
-.access_container h2 {
-  margin-bottom: 0;
   color: #4c545d;
+  margin-bottom: 0;
 }
 
 .access_container p {
-  text-align: center;
-  color: #9fabb2;
   font-size: 1.04rem;
   line-height: 1.4rem;
+  color: #9fabb2;
+  text-align: center;
+}
+
+.access_container p {
   width: 80%;
 }
 
@@ -282,10 +282,10 @@ body {
 }
 
 .download_container p {
-  text-align: center;
   font-size: 1.04rem;
   line-height: 1.4rem;
   color: #9fabb2;
+  text-align: center;
 }
 
 .download_container .download_button {
@@ -338,22 +338,23 @@ footer .footer_content .footer_links {
 }
 
 footer .footer_content .footer_links .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer .footer_content .footer_links .other_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
 }
 
 footer .footer_content .footer_links a {
   text-decoration: none;
   color: #4c545d;
-  padding-left: 20px;
   font-weight: 600;
 }
 

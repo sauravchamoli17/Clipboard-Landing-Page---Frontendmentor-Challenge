@@ -13,7 +13,7 @@ html{
 body{
     font-size:$font-size;
     background-color:$white;
-    background:url("./images/bg-header-desktop.png") no-repeat;
+    background:url("/images/bg-header-desktop.png") no-repeat;
     background-position: top;
 }
 // Intro Container 
@@ -24,17 +24,13 @@ body{
     width:45%;
     margin:0 auto;
     margin-top:12%;
-
     h1{
         margin:50px 0px 0px 0px;
         text-align:center;
         color:$darkgrayishblue;
     }
+    @include paragraph;
     p{
-        font-size:1.04rem;
-        line-height:1.4rem;
-        color:$grayishblue;
-        text-align:center;
         padding:0px 10px 0px 10px;
     }
     @include download_button;
@@ -47,16 +43,8 @@ body{
     display:flex;
     flex-direction:column;
     align-items:center;
-    h2{
-        color:$darkgrayishblue;
-        margin-bottom:0;
-    }
-    p{
-        text-align:center;
-        font-size:1.04rem;
-        line-height:1.4rem;
-        color:$grayishblue;
-    }
+    @include h2;
+    @include paragraph;
 }
 
 // Features Container 
@@ -73,11 +61,10 @@ body{
         li{
         margin-top:60px;
         }
+        @include h2;
         h2{
-            color:$darkgrayishblue;
             font-weight:600;
             font-size:1.6rem;
-            margin-bottom:0;
         }
         p{
             margin:10px 0px 10px 0px;
@@ -95,15 +82,9 @@ body{
     width:60%;
     margin:0 auto;
     margin-top:80px;
-    h2{
-        margin-bottom:0;
-        color:$darkgrayishblue;
-    }
+    @include h2;
+    @include paragraph;
     p{
-        text-align:center;
-        color:$grayishblue;
-        font-size:1.04rem;
-        line-height:1.4rem;
         width:80%;
     }
 }
@@ -166,12 +147,7 @@ body{
         margin:10px 0px 10px 0px;
         color:$darkgrayishblue;
     }
-    p{
-        text-align:center;
-        font-size:1.04rem;
-        line-height:1.4rem;
-        color:$grayishblue;
-    }
+    @include paragraph;
     .download_button{
         margin:0 auto;
         margin-top:50px;
@@ -201,16 +177,17 @@ footer{
             flex-direction: column;
             width:50%;
             .links{
-                display: flex;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr;
             }
             .other_links{
-                display: flex;
-                margin-bottom:20px;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr;
+                margin-top:10px;
             }
             a{
             text-decoration:none;
             color:$darkgrayishblue;
-            padding-left:20px;
             font-weight: 600;
             &:hover{
                 color:hsl(171, 66%, 44%);
