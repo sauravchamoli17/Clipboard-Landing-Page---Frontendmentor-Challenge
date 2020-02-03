@@ -11,6 +11,7 @@ html{
     padding:0;
 }
 body{
+    overflow-x:hidden;
     font-size:$font-size;
     background-color:$white;
     background:url("/images/bg-header-desktop.png") no-repeat;
@@ -163,8 +164,8 @@ footer{
     margin-top:150px;
     .footer_content{
         display:flex;
-        align-items: center;
         justify-content: space-around;
+        align-items:center;
         figure{
             width:45px;
             height:45px;
@@ -177,13 +178,17 @@ footer{
             flex-direction: column;
             width:50%;
             .links{
-                display: grid;
-                grid-template-columns:1fr 1fr 1fr;
+                display:flex;
+                a{
+                    flex-basis:33.33%;
+                }
             }
             .other_links{
-                display: grid;
-                grid-template-columns:1fr 1fr 1fr;
-                margin-top:10px;
+                display:flex;
+                padding-top:15px;
+                a{
+                    flex-basis:33.33%;
+                }
             }
             a{
             text-decoration:none;
@@ -194,5 +199,19 @@ footer{
             }
             }
         }
+        .socialmedia{
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            width:10%;
+     } 
+     .social_icon{
+         text-decoration:none;
+         font-size:1.8rem;
+         color:#4C545C;
+         &:hover{
+            color:$strongcyan;
+         }
+     }
     }
 }

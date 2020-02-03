@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-size: 18px;
   background-color: white;
   background: url("/images/bg-header-desktop.png") no-repeat;
@@ -56,8 +57,9 @@ body {
   display: flex;
   width: 70%;
   margin-top: 25px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container .download_ios {
@@ -245,8 +247,9 @@ body {
   display: flex;
   width: 70%;
   margin-top: 25px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .download_container .download_ios {
@@ -310,11 +313,11 @@ footer .footer_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 footer .footer_content figure {
@@ -338,18 +341,26 @@ footer .footer_content .footer_links {
 }
 
 footer .footer_content .footer_links .links {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer_content .footer_links .links a {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
 }
 
 footer .footer_content .footer_links .other_links {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+footer .footer_content .footer_links .other_links a {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
 }
 
 footer .footer_content .footer_links a {
@@ -359,6 +370,29 @@ footer .footer_content .footer_links a {
 }
 
 footer .footer_content .footer_links a:hover {
+  color: #26baa4;
+}
+
+footer .footer_content .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+}
+
+footer .footer_content .social_icon {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #4C545C;
+}
+
+footer .footer_content .social_icon:hover {
   color: #26baa4;
 }
 /*# sourceMappingURL=main.css.map */
