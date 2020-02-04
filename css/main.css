@@ -4,11 +4,6 @@
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-  50% {
-    opacity: 0.6;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
   100% {
     opacity: 1;
     -webkit-transform: rotate(0deg);
@@ -21,11 +16,6 @@
     opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-  50% {
-    opacity: 0.6;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
   }
   100% {
     opacity: 1;
