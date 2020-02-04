@@ -776,7 +776,6 @@ footer .footer_content .social_icon:hover {
   body {
     background: url("../images/bg-header-mobile.png") no-repeat;
     background-size: 100%;
-    background-position: center;
   }
   .container {
     width: 90%;
