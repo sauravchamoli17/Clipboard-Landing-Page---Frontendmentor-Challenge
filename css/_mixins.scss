@@ -5,6 +5,7 @@
         width:70%;
         margin-top:25px;
         justify-content: space-between;
+        animation:2s ease-in-out slide_up;
     }
     .download_ios{
         color:$white;

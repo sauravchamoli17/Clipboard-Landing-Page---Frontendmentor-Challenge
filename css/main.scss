@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'keyframes';
 // Sass Partials Imported 
 *{
     box-sizing:border-box;
@@ -25,6 +26,10 @@ body{
     width:45%;
     margin:0 auto;
     margin-top:12%;
+    animation:1.5s ease-out slide_down;
+    img{
+        animation:1.5s ease-out rotate;
+    }
     h1{
         margin:50px 0px 0px 0px;
         text-align:center;
@@ -579,6 +584,5 @@ footer{
                 justify-content: space-around;
             }
         }
-    
     }
 }
