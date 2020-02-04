@@ -43,6 +43,17 @@
             width:100%;
         }
     }
+       @media (min-width:320px) and (max-width:480px){
+        .download_button{
+            flex-direction:column;
+            justify-content: space-between;
+            width:80%;
+            .download_ios,.download_mac{
+                text-align:center;
+                margin:10px 0px 10px 0px;
+            }
+        }
+    }
 }
 
 // Text Styles 

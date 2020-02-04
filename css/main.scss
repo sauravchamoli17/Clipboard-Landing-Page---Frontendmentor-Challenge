@@ -436,8 +436,120 @@ footer{
 }
 // Media Query For Mobile 
 
-@media (min-width:320px) and(max-width:480px){
+@media (min-width:320px) and (max-width:480px){
     body{
-     background:url("/images/bg-header-desktop.png") no-repeat;
+     background:url("/images/bg-header-mobile.png") no-repeat;
+     background-size:100%;
+    }
+    .container{
+        width:90%;
+        img{
+            margin-top:50px;
+        }
+        h1{
+            font-size:2rem;
+            width:85%;
+        }
+        p{
+            padding:0px 4px 0px 4px;
+            line-height:1.6rem;
+        }
+    }
+    .keep_track{
+        width:70%;
+        h2{
+            text-align:center;
+        }
+        p{
+            margin:0;
+            font-size:1.02rem;
+            line-height:1.6rem;
+        }
+    }
+    .features{
+        width:90%;
+        flex-direction: column;
+        align-items: center;
+        margin:0 auto;
+        margin-top:60px;
+        img{
+            max-width:100%;
+            transform:translateX(0);
+            margin:0 auto;
+        }
+        ul{
+            width:80%;
+        li{
+            text-align:center;
+            h2{
+                font-size:1.6rem;
+            }
+         p{
+            margin:0;
+            font-size:1.02rem;
+            line-height:1.6rem;
+          }
+        }
+      }
+    }
+    .access_container{
+        width:85%;
+        h2{
+                font-size:1.6rem;
+                margin:14px 0px 14px 0px;
+         }
+        p{
+            margin:0;
+            font-size:1.02rem;
+            line-height:1.6rem;
+        }
+        img{
+            max-width:100%;
+            margin-top:50px;
+        }
+    }
+    .supercharge_container{
+        h2{
+                font-size:1.6rem;
+                margin:14px 0px 14px 0px;
+         }
+        p{
+            margin:0;
+            font-size:1.02rem;
+            line-height:1.6rem;
+        }
+    }
+    .supercharge_features{
+        flex-direction:column;
+        .feature_item{
+            margin:20px 0px 20px 0px;
+            h3{
+                margin:15px 0px 15px 0px;
+                font-size:1.2rem;
+            }
+            p{
+                font-size:1.02rem;
+            }
+        }
+    }
+    .company_logo_container{
+        flex-direction: column;
+        align-items: center;
+        .company_logo{
+            margin:40px 0px 40px 0px;
+        }
+    }
+    .download_container{
+        width:80%;
+         h2{
+                font-size:1.6rem;
+                margin:14px 0px 14px 0px;
+         }
+         p{
+                font-size:1.02rem;
+         }
+    }
+    footer{
+        flex-direction:column;
     }
 }
