@@ -15,7 +15,7 @@ body{
     overflow-x:hidden;
     font-size:$font-size;
     background-color:$white;
-    background:url("../images/bg-header-desktop.png") no-repeat;
+    background:url("../images/bg-header-desktop.png") no-repeat !important;
     background-position: top;
 }
 // Intro Container 
@@ -448,7 +448,7 @@ footer{
 
 @media (min-width:320px) and (max-width:480px){
     body{
-     background:url("../images/bg-header-mobile.png") no-repeat;
+     background:url("../images/bg-header-mobile.png") no-repeat !important;
      background-size:100%;
     }
     .container{
