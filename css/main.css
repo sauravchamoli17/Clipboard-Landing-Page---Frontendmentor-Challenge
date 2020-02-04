@@ -92,7 +92,7 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   background-color: white;
-  background: url("/images/bg-header-desktop.png") no-repeat;
+  background: url("../images/bg-header-desktop.png") no-repeat;
   background-position: top;
 }
 
@@ -774,7 +774,7 @@ footer .footer_content .social_icon:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
   body {
-    background: url("/images/bg-header-mobile.png") no-repeat;
+    background: url("../images/bg-header-mobile.png") no-repeat;
     background-size: 100%;
   }
   .container {
