@@ -51,6 +51,7 @@ body{
     align-items:center;
     @include h2;
     @include paragraph;
+    animation:2s ease-in-out slide_up;
 }
 
 // Features Container 

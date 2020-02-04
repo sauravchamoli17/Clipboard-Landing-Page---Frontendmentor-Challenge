@@ -226,6 +226,8 @@ body {
           align-items: center;
   color: #4c545d;
   margin-bottom: 0;
+  -webkit-animation: 2s ease-in-out slide_up;
+          animation: 2s ease-in-out slide_up;
 }
 
 .keep_track p {
